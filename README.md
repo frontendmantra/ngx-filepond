@@ -70,6 +70,8 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
 
   @ViewChild('myPond') myPond: any;
+  /* In Angular 8 , ViewChild takes 2 parameters */
+  //@ViewChild('myPond', {static: false}) myPond: any;
 
   pondOptions = {
     class: 'my-filepond',
